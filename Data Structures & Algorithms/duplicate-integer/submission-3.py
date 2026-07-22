@@ -1,0 +1,8 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        d=[]
+        for i in range(len(nums)):
+            if nums[i] in d:
+                return True
+            d.append(nums[i])
+        return False
